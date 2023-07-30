@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Superhero Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Superhero Form</h1>
+    <form>
+      <div class="form-wrap">
+          <fieldset>
+          <legend>About the Superhero</legend>
+          <div class="form-group">
+            <label for="Real-Name">Real Name</label>
+            <input type="text" name="realname" id="real-name">
+            <label for="superhero-name">Superhero Name</label>
+            <input type="text" name="superheroname" id="superhero-name">
+            <label for="Age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="99">  
+          </div>
+          <div class="form-group">
+            <label for="about">About</label>
+            <textarea name="About" id="about" cols="65" rows="7">information about the superhero, max 500 symbols</textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo">Photo:</label>
+            <input type="file" id="myfile" name="myfile" multiple="multiple" />
+          </div>
+        </fieldset>
+        </div>
+      <div class="form-wrap">
+        <fieldset>
+          <legend>Powers</legend>
+          <div class="form-group">
+            <div class="checkbox">
+              <input type="checkbox" name="powers" tabindex="1" id="Telekenisis" >
+              <label for="Telekenisis">Telekenisis</label>
+              <input type="checkbox" name="powers" tabindex="2" id="Super strength and Speed">
+              <label for="Super strength and speed">Super strength and speed</label>
+              <input type="checkbox" name="powers" tabindex="3" id="Shapeshifting">
+              <label for="Shapeshifting">Shapeshifting</label>
+              <input type="checkbox" name="powers" tabindex="4" id="Flight">
+              <label for="Flight">Flight</label>
+              <input type="checkbox" name="powers" tabindex="5" id="Elemental Control" >
+              <label for="Elemental Control">Elemental control</label>
+              <input type="checkbox" name="powers" tabindex="6" id="Other" >
+              <label for="Other">Other</label>
+            </div>  
+            <div class="slidecontainer">
+              <label for="level-of-control">Level of Control:</label>
+              <input type="range" min="0" max="10" value="1" id="slider">
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-wrap">
+        <fieldset>
+        <legend>Origin of Powers</legend>
+        <div class="radio-buttons">
+          <input type="radio" name="unknown" id="Unknown">Unknown
+          <input type="radio" name="freak-lab-accident" id="Freak Lab Accident">Freak Lab Accident
+          <input type="radio" name="Chosen by a Ancient Wise Being" id="Chosen by a Ancient Wise Being">Chosen by a Ancient Wise Being
+          <input type="radio" name="the-superhero-is-not-normal" id="The superhero is not normal">The superhero is not normal
+          <input type="radio" name="other" id="Other">Other
+        </div>
+      </fieldset>
+      </div>
+      <div class="buttons">
+        <input type="reset" name="clear" id="clear" value="CLEAR">
+        <input type="submit" name="submit" id="submit" value="SUBMIT">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  font-family: Verdana, Geneva, Tahsma, sans-serif;
+  line-height: 2.5;
+  background: #333;
+  /* color: ; */
+}
+
+textarea {
+  max-width: 450px;
+  max-height: 140px;
+  min-width: 450px;
+  min-height: 140px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.container {
+  margin: 25px;
+  padding: 20px;
+  height: 850px;
+  background: #fff;
+  padding-top: -80px;
+}
+
+.form-group {
+  margin: 15px;
+}
